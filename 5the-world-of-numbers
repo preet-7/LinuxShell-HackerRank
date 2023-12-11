@@ -1,0 +1,15 @@
+#!/bin/bash
+read a
+read b 
+
+echo $(($a + $b))
+echo $(($a - $b))
+echo $(($a * $b))
+echo $(($a / $b))
+
+# Using expr command with quotes
+# sum=`expr $num1 + $num2`
+# Use expr command inclosed with brackets and start with dollar symbol.
+# sum=$(expr $num1 + $num2)
+# This is my preferred way to directly with the shell.
+# sum=$(($num1 + $num2))
