@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read c 
+if [[ $c == [Yy] ]];
+then
+echo YES
+elif [[ $c == [Nn] ]];
+then 
+echo NO
+fi
