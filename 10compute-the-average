@@ -1,0 +1,10 @@
+#!/bin/bash
+read N
+sum=0
+i=0
+while [[ $i -lt $N ]]; do  
+  read num;
+  ((sum+=num))
+  ((i+=1))
+done
+printf "%.3f" $(echo $sum/$N | bc -l)
